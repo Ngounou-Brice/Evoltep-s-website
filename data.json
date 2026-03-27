@@ -1,0 +1,39 @@
+{
+    "heroTitle": "We Build Powerful Digital Solutions",
+    "projects": [
+        {
+            "id": 1,
+            "title": "Project One",
+            "description": "This is an example project.",
+            "image": "/uploads/2.png",
+            "category": "Web Development",
+            "year": 2026
+        },
+        {
+            "title": "hikjk",
+            "description": "hnkj",
+            "category": "kjnk",
+            "year": 2026,
+            "image": "/uploads/1.png",
+            "id": 2
+        },
+        {
+            "title": "kjn",
+            "description": "o;ij",
+            "category": "kopk",
+            "year": 2026,
+            "link": "bd-gift-ten.vercel.app",
+            "image": "/uploads/default-project.png",
+            "id": 3
+        },
+        {
+            "title": "uygj",
+            "description": "kuh",
+            "category": "iuh",
+            "year": 2026,
+            "link": "bd-gift-ten.vercel.app",
+            "image": "/uploads/5.png",
+            "id": 4
+        }
+    ]
+}

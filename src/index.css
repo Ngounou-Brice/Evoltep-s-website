@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #F8FAFF;
+    color: #0A0F1E;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ::selection {
+    background-color: rgba(27, 121, 253, 0.2);
+    color: #1B79FD;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-blue text-white font-display font-semibold px-6 py-3 rounded-xl 
+           hover:shadow-glow hover:scale-105 transition-all duration-300 text-sm tracking-wide;
+  }
+
+  .btn-outline {
+    @apply border-2 border-brand-blue text-brand-blue font-display font-semibold px-6 py-3 rounded-xl 
+           hover:bg-brand-blue hover:text-white hover:shadow-glow transition-all duration-300 text-sm tracking-wide;
+  }
+
+  .section-title {
+    @apply font-display font-bold text-4xl md:text-5xl text-brand-dark leading-tight;
+  }
+
+  .section-label {
+    @apply font-body text-brand-blue font-semibold text-sm tracking-widest uppercase mb-3 block;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card hover:shadow-card-hover transition-all duration-300;
+  }
+
+  .glow-dot {
+    @apply w-2 h-2 rounded-full bg-brand-blue shadow-glow;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #1B79FD 0%, #60a5fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-mesh {
+    background-image: 
+      radial-gradient(at 20% 50%, rgba(27, 121, 253, 0.08) 0px, transparent 50%),
+      radial-gradient(at 80% 20%, rgba(27, 121, 253, 0.05) 0px, transparent 50%),
+      radial-gradient(at 60% 80%, rgba(96, 165, 250, 0.05) 0px, transparent 50%);
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #1B79FD;
+  border-radius: 3px;
+}
+
+/* Noise texture overlay */
+.noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
