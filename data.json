@@ -15,7 +15,8 @@
             "category": "kjnk",
             "year": 2026,
             "image": "/uploads/1.png",
-            "id": 2
+            "id": 2,
+            "link": "undefined"
         },
         {
             "title": "uygj",
@@ -25,6 +26,15 @@
             "link": "bd-gift-ten.vercel.app",
             "image": "/uploads/5.png",
             "id": 4
+        },
+        {
+            "title": "yu",
+            "description": "",
+            "category": "",
+            "year": 2026,
+            "link": "",
+            "image": "/uploads/default-project.png",
+            "id": 5
         }
     ]
 }
